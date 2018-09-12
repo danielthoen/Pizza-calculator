@@ -1,0 +1,30 @@
+<html>
+	<script>
+
+		(confirm("do you like to order a pizza"))
+
+		var smallPrice = 799;
+		var mediumPrice = 999;//dit zijn de standaard prijzen in centen
+		var largePrice = 1199;
+
+		var smallAmount = prompt ('How many small pizza would you like');
+		var mediumAmount = prompt ('How many medium pizza would you like')// dit zijn de pop-ups voor wat voor pizza je wilt bestellen
+		var largeAmount = prompt ('How many large pizza would you like');
+
+		var smallTotal = (smallAmount * smallPrice) / 100;// hier rekent die de hoeveelheid small pizzas uit gedeeld door 100
+		var mediumTotal = (mediumAmount * mediumPrice) / 100;//hier rekent die de hoeveelheid medium pizzas en de prijs gedeeld door 100
+		var largeTotal = (largeAmount * largePrice) / 100;//hier rekent die de hoeveelheid large pizzas uit en de prijs gedeeld door100
+		var orderTotal = (smallTotal + mediumTotal + largeTotal);
+
+		document.write ('Ordered Small Pizza: ' + smallAmount +'<br>'+ 'Total Price Small Pizzas € ' + smallTotal);//dit is de small pizza prijss
+		document.write ('<br>');
+		document.write ('<br>');
+		document.write ('Ordered Small Pizza: ' + mediumAmount +'<br>'+ 'Total Price Medium Pizzas € ' + mediumTotal);//dit is de medium pizza prijs
+		document.write ('<br>');
+		document.write ('<br>');
+		document.write ('Ordered Small Pizza: ' + largeAmount +'<br>'+ 'Total Price Large Pizzas € ' + largeTotal);//dit is de large pizza prijs
+		document.write ('<br>');
+		document.write ('<br>');
+		document.write ('Subtotal € ' + orderTotal);//dit is de totale prijs
+	</script>
+</html>	
